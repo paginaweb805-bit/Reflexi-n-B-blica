@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') no-repeat center center/cover;
+    color: white;
+    transition: 0.5s;
+}
+
+.container {
+    text-align: center;
+    margin-top: 120px;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+input, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #7ec8e3;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5fb2d6;
+}
+
+#error-msg {
+    color: #ff6b6b;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+/* Animación */
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Tema claro */
+.light-theme {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* BOTÓN CRUZ */
+.cross-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    color: black;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#verse-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    max-width: 250px;
+}
